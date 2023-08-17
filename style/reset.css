@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* ::selection {
   background-color: #3e3d40;
 } */
