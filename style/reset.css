@@ -1,0 +1,24 @@
+h1, h2, small {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ::selection {
+  background-color: #3e3d40;
+} */
+
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: #131214;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1d1c1f;
+  border-radius: 0px;
+}
+
+/* Custom */
