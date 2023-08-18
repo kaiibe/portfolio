@@ -7,24 +7,28 @@
 
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script src="https://kit.fontawesome.com/e398b3cfbd.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <section id="home">
       <div class="container">
-        <header>
+        <nav>
           <h1><span>K</span>aiibe.</h1>
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contacts">Contacts</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()""></i>
           </ul>
-        </header>
-        <div class="header-text">
+          <i class="fa-solid fa-bars-staggered" onclick="openmenu()"></i>
+        </nav>
+        <div class="nav-text">
           <p>Software Engineer</p>
-          <h1>Hi, I'm <span>Behzod</span><br />One line of code at a time</h1>
+          <h1>Hi, I'm <span class="auto-type"></span><br />One line of code at a time</h1>
         </div>
       </div>
     </section>
@@ -32,12 +36,12 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="about-col-1">
+          <div class="about-col-1" data-aos="fade-down">
             <img src="./assets/imgs/me.png" />
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
+            <h1 class="sub-title" data-aos="fade-down">About Me</h1>
+            <p data-aos="fade-up">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo dolore eos dolorum deleniti. Nulla reprehenderit
               suscipit non iusto vitae rerum ducimus ab nostrum iste earum iure
@@ -47,13 +51,13 @@
               est neque, adipisci corporis.
             </p>
 
-            <div class="tab-titles">
+            <div class="tab-titles" data-aos="fade-up">
                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                 <p class="tab-links" onclick="opentab('education')">Education</p>
                 <p class="tab-links" onclick="opentab('something')">Something</p>
             </div>
 
-            <div id="skills" class="tab-contents active-tab">
+            <div id="skills" class="tab-contents active-tab" data-aos="fade-up">
                 <ul>
                     <li><span>Programming Languages</span><br>c++ python asd asd </li>
                     <li><span>Programming Languages</span><br>c++ python asd asd </li>
@@ -82,10 +86,14 @@
     </section>
 
     <section id="experience">
-      <div class="timeline">
+      <div class="experience-head" data-aos="fade-down">
+        <h3>WHAT I HAVE DONE SO FAR</h3>
+        <h1>Work Experience</h1>
+      </div>
+      <div class="timeline" data-aos="fade">
         <div class="container left-container">
-          <img src="./assets/imgs/ue.png" />
-          <div class="text-box">
+          <img src="./assets/imgs/ue2.png" data-aos="fade" data-aos-duration="500">
+          <div class="text-box" data-aos="fade-right" >
             <h2>University of Europe</h2>
             <small>Oct 2022 - Feb 2023</small>
             <p>
@@ -101,8 +109,8 @@
         </div>
 
         <div class="container right-container">
-          <img src="./assets/imgs/alif.png" />
-          <div class="text-box">
+          <img src="./assets/imgs/alif.png" data-aos="fade" data-aos-duration="500">
+          <div class="text-box" data-aos="fade-left">
             <h2>Alif Bank</h2>
             <small>Mar 2023 - April 2023</small>
             <p>
@@ -118,8 +126,8 @@
         </div>
 
         <div class="container left-container">
-          <img src="./assets/imgs/aai.png" />
-          <div class="text-box">
+          <img src="./assets/imgs/aai.png" data-aos="fade" data-aos-duration="500">
+          <div class="text-box" data-aos="fade-right">
             <h2>AAI GmbH</h2>
             <small>May 2023 - Present</small>
             <p>
@@ -151,20 +159,23 @@
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="" class="btn btn2">Download CV</a>
+                    <a href="./assets/other/CV.pdf" download class="btn">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
