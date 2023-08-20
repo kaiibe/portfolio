@@ -7,6 +7,7 @@ body {
 section {
     min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .container {
@@ -90,7 +91,7 @@ span {
 }
 
 .about-col-1 img {
-    width: 100%;
+    width: 80%;
     border-radius: 15px;
 }
 
@@ -157,8 +158,8 @@ span {
 
 #experience {
     color: black;
-    width: 100%;
 }
+
 
 .experience-head {
     display: flex;
@@ -186,7 +187,7 @@ span {
     margin: 100px auto;
 }
 
-#experience .container {
+.experience-card {
     padding: 10px 50px;
     position: relative;
     width: 50%;
@@ -210,7 +211,7 @@ span {
     left: 50%;
 }
 
-#experience .container img {
+.experience-card img {
     position: absolute;
     width: 55px;
     border-radius: 50%;
@@ -269,6 +270,105 @@ span {
     left: -15px;
 }
 
+
+/* My Projects */
+
+#my-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #my-projects .container {
+    margin-top: 100px;
+} */
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    gap: 40px;
+}
+ 
+.my-projects-head {
+    width: 50%;
+}
+
+.my-projects-head h3{
+    color: #ababab;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.my-projects-head h1{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.projects-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #262626;
+    width: 30%;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.projects-cards h1 {
+    margin-bottom: 20px;
+}
+
+.projects-cards p {
+    color: #ababab;
+    margin-bottom: 20px;
+}
+
+.projects-cards h5 {
+    font-weight: 400;
+    color: #b54769;
+}
+
+.projects-img {
+    padding: 20px;
+    background-size: cover;
+    height: 300px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio-project .projects-img{
+    background-image: url("../assets/imgs/portfolio-preview.png");
+}
+
+
+.weather-project .projects-img{
+    background-image: url("../assets/imgs/weather-preview.png");
+}
+
+.terminal-project .projects-img{
+    background-image: url("../assets/imgs/terminal-preview.png");
+}
+
+.projects-img a {
+    cursor: default;
+}
+
+.projects-img img {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.7s ease;  
+    transform: scale(1);
+}
+
+.projects-img img:hover {
+    transform: scale(1.1); 
+    background-color: #b54769;
+}
 
 /* CONTACTS */
 
@@ -456,10 +556,34 @@ nav .fa-solid {
         font-size: 50px;
     }
 
-    #experience .container {
+    .experience-card {
         width: 100%;
         padding-left: 80px;
         padding-right: 25px;
+    }
+
+    .timeline::after {
+        margin-left: 4px;
+    }
+
+    /* My Projects */
+
+    .my-projects-head {
+        width: 100%;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .projects-cards {
+        width: 100%;
+    }
+
+    /* contact */
+
+    #contacts .container {
+        margin-top: 150px;
     }
 
     .text-box {
@@ -491,3 +615,5 @@ nav .fa-solid {
         flex-basis: 100%;
     }
 }
+
+

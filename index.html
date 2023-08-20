@@ -1,99 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
 
-    <link rel="stylesheet" href="./style/reset.css" />
-    <link rel="stylesheet" href="./style/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
 
-    <script src="https://kit.fontawesome.com/e398b3cfbd.js" crossorigin="anonymous"></script>
-  </head>
+  <link rel="stylesheet" href="./style/reset.css" />
+  <link rel="stylesheet" href="./style/index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <body>
-    <section id="home">
-      <div class="container">
-        <nav>
-          <h1><span>K</span>aiibe.</h1>
-          <ul id="sidemenu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()""></i>
+  <script src="https://kit.fontawesome.com/e398b3cfbd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="home">
+    <div class="container">
+      <nav>
+        <h1><span>K</span>aiibe.</h1>
+        <ul id="sidemenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#my-projects">My Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()""></i>
           </ul>
-          <i class="fa-solid fa-bars-staggered" onclick="openmenu()"></i>
-        </nav>
-        <div class="nav-text">
-          <p>Software Engineer</p>
-          <h1>Hi, I'm <span class="auto-type"></span><br />One line of code at a time</h1>
-        </div>
+          <i class=" fa-solid fa-bars-staggered" onclick="openmenu()"></i>
+      </nav>
+      <div class="nav-text">
+        <p>Software Engineer</p>
+        <h1>Hi, I'm <span class="auto-type"></span><br />One line of code at a time</h1>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1" data-aos="fade-down">
-            <img src="./assets/imgs/me.png" />
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1" data-aos="slide-right" data-aos-duration="700">
+          <img src="./assets/imgs/me.png" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title" data-aos="fade-down" data-aos-duration="500">About Me</h1>
+          <p data-aos="fade-up" data-aos-duration="700">
+            I am a diligent and ambitious student with a deep enthusiasm for creating efficient and reliable software
+            solutions that meet the needs of users and businesses. I am currently in my third year of BSc. Software
+            Engineering at the University of Europe for Applied Sciences. I am seeking opportunities for an internship
+            in industries where I can apply my knowledge and experience, and ultimately benefit the company & team I
+            work for.
+          </p>
+
+          <div class="tab-titles" data-aos="fade-up" data-aos-duration="700">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('something')">Something</p>
           </div>
-          <div class="about-col-2">
-            <h1 class="sub-title" data-aos="fade-down">About Me</h1>
-            <p data-aos="fade-up">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo dolore eos dolorum deleniti. Nulla reprehenderit
-              suscipit non iusto vitae rerum ducimus ab nostrum iste earum iure
-              est neque, adipisci corporis. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo dolore eos dolorum deleniti. Nulla reprehenderit
-              suscipit non iusto vitae rerum ducimus ab nostrum iste earum iure
-              est neque, adipisci corporis.
-            </p>
 
-            <div class="tab-titles" data-aos="fade-up">
-                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                <p class="tab-links" onclick="opentab('education')">Education</p>
-                <p class="tab-links" onclick="opentab('something')">Something</p>
-            </div>
+          <div id="skills" class="tab-contents active-tab" data-aos="fade-up" data-aos-duration="700">
+            <ul>
+              <li><span>Programming Languages</span><br>c++ python asd asd </li>
+              <li><span>Programming Languages</span><br>c++ python asd asd </li>
+              <li><span>Programming Languages</span><br>c++ python asd asd </li>
+            </ul>
+          </div>
 
-            <div id="skills" class="tab-contents active-tab" data-aos="fade-up">
-                <ul>
-                    <li><span>Programming Languages</span><br>c++ python asd asd </li>
-                    <li><span>Programming Languages</span><br>c++ python asd asd </li>
-                    <li><span>Programming Languages</span><br>c++ python asd asd </li>
-                </ul>
-            </div>
+          <div id="education" class="tab-contents">
+            <ul>
+              <li><span>University of Europe for Applied Sciences</span><br>BSc. Software Engineering 2021-Present</li>
+              <li><span>Economic Lyceum for Gifted Students</span><br>High School Diploma</li>
+            </ul>
+          </div>
 
-            <div id="education" class="tab-contents">
-                <ul>
-                    <li><span> Languages</span><br>c++ python asd asd </li>
-                    <li><span> Languages</span><br>c++ python asd asd </li>
-                    <li><span> Languages</span><br>c++ python asd asd </li>
-                </ul>
-            </div>
-
-            <div id="something" class="tab-contents">
-                <ul>
-                    <li><span>Programming </span><br>c++ python asd asd </li>
-                    <li><span>Programming </span><br>c++ python asd asd </li>
-                    <li><span>Programming </span><br>c++ python asd asd </li>
-                </ul>
-            </div>
+          <div id="something" class="tab-contents">
+            <ul>
+              <li><span>Programming </span><br>c++ python asd asd </li>
+              <li><span>Programming </span><br>c++ python asd asd </li>
+              <li><span>Programming </span><br>c++ python asd asd </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="experience">
-      <div class="experience-head" data-aos="fade-down">
+  <section id="experience">
+    <div class="container">
+      <div class="experience-head" data-aos="fade-down" data-aos-duration="500">
         <h3>WHAT I HAVE DONE SO FAR</h3>
         <h1>Work Experience</h1>
       </div>
       <div class="timeline" data-aos="fade">
-        <div class="container left-container">
+        <div class="experience-card left-container">
           <img src="./assets/imgs/ue2.png" data-aos="fade" data-aos-duration="500">
-          <div class="text-box" data-aos="fade-right" >
+          <div class="text-box" data-aos="fade-right">
             <h2>University of Europe</h2>
             <small>Oct 2022 - Feb 2023</small>
             <p>
@@ -108,7 +108,7 @@
           </div>
         </div>
 
-        <div class="container right-container">
+        <div class="experience-card right-container">
           <img src="./assets/imgs/alif.png" data-aos="fade" data-aos-duration="500">
           <div class="text-box" data-aos="fade-left">
             <h2>Alif Bank</h2>
@@ -125,7 +125,7 @@
           </div>
         </div>
 
-        <div class="container left-container">
+        <div class="experience-card left-container">
           <img src="./assets/imgs/aai.png" data-aos="fade" data-aos-duration="500">
           <div class="text-box" data-aos="fade-right">
             <h2>AAI GmbH</h2>
@@ -144,38 +144,97 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contacts">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> kaiibe@mail.ru</p>
-                    <p><i class="fa-solid fa-square-phone"></i> +992888084004</p>
-                    <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="./assets/other/CV.pdf" download class="btn">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
+  <section id="my-projects">
+    <div class="container">
+      <div class="my-projects-head">
+        <div data-aos="fade-down">
+          <h3>MY WORK</h3>
+          <h1>Projects.</h1>
         </div>
-    </section>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="./index.js"></script>
-  </body>
+        <h3 data-aos="fade-up" data-aos-duration="500">
+          Following projects showcase my skills and experience through
+          real-world examples of my
+          work. Each project is
+          briefly described with links to code repositories and live demos in it. It reflects my ability to solve
+          complex problems, work with different technologies and manage projects effectively.
+        </h3>
+      </div>
+
+      <div class="projects">
+        <div class="projects-cards portfolio-project" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
+          <div class="projects-img">
+            <a href="https://github.com/kaiibe/portfolio" target="_blank"><img src="./assets/imgs/github.png"
+                alt=""></a>
+          </div>
+          <h1>Portfolio.</h1>
+          <p>Embrace the elegance of simplicity with our Terminal Portfolio Web Application, a unique fusion of retro
+            aesthetics and modern web technologies. This portfolio transports you back to the days of command-line
+            interfaces, offering a nostalgic experience combined with the functionalities of today's web.</p>
+          <h5>#HTML #CSS #JS</h5>
+        </div>
+
+        <div class="projects-cards weather-project" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500">
+          <div class="projects-img">
+            <a href="https://github.com/kaiibe/weather-web" target="_blank"><img src="./assets/imgs/github.png"
+                alt=""></a>
+          </div>
+          <h1>Weather.</h1>
+          <p>Embrace the elegance of simplicity with our Terminal Portfolio Web Application, a unique fusion of retro
+            aesthetics and modern web technologies. This portfolio transports you back to the days of command-line
+            interfaces, offering a nostalgic experience combined with the functionalities of today's web.</p>
+          <h5>#HTML #CSS #JS</h5>
+        </div>
+
+        <div class="projects-cards terminal-project" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="500">
+          <div class="projects-img">
+            <a href="https://github.com/kaiibe/terminal" target="_blank"><img src="./assets/imgs/github.png" alt=""></a>
+          </div>
+          <h1>Terminal.</h1>
+          <p>Embrace the elegance of simplicity with our Terminal Portfolio Web Application, a unique fusion of retro
+            aesthetics and modern web technologies. This portfolio transports you back to the days of command-line
+            interfaces, offering a nostalgic experience combined with the functionalities of today's web.</p>
+          <h5>#HTML #CSS #JS</h5>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left" data-aos="flip-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> kaiibe@mail.ru</p>
+          <p><i class="fa-solid fa-square-phone"></i> +992888084004</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="./assets/other/CV.pdf" download class="btn">Download CV</a>
+        </div>
+        <div class="contact-right" data-aos="flip-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="./index.js"></script>
+</body>
+
 </html>

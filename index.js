@@ -6,6 +6,7 @@ const msg = document.getElementById("msg");
 var tablinks = document.getElementsByClassName("tab-links")
 var tabcontents = document.getElementsByClassName("tab-contents")
 var sidemenu = document.getElementById("sidemenu")
+
 var typed = new Typed(".auto-type", {
     strings: ["Behzod", "Software Engineer"],
     typeSpeed: 50,
@@ -16,10 +17,15 @@ var typed = new Typed(".auto-type", {
 
 document.addEventListener("DOMContentLoaded", function () {
     const textBoxes = document.querySelectorAll('.text-box');
+    const projects = document.querySelectorAll('.projects-cards');
 
-    if (window.innerWidth <= 768) { // Adjust this value based on your requirement
+    if (window.innerWidth <= 600) { 
         textBoxes.forEach(textBox => {
-            textBox.setAttribute('data-aos', 'fade-right');  // Replace 'fade-up' with your desired effect for small devices
+            textBox.setAttribute('data-aos', 'fade-right');  
+        });
+
+        projects.forEach(projects => {
+            projects.setAttribute('data-aos-delay', '500');  
         });
     }
 });
