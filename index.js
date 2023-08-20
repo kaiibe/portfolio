@@ -1,7 +1,11 @@
+const scriptURL = 'https://script.google.com/macros/s/AKfycbws1lrF333d8SMw993SJSKYggMQiX9Y7NVY3zhW1LEMICTu-FMAk56-33wUK7gVfQTo/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg");
+
+
 var tablinks = document.getElementsByClassName("tab-links")
 var tabcontents = document.getElementsByClassName("tab-contents")
 var sidemenu = document.getElementById("sidemenu")
-
 var typed = new Typed(".auto-type", {
     strings: ["Behzod", "Software Engineer"],
     typeSpeed: 50,
@@ -10,9 +14,15 @@ var typed = new Typed(".auto-type", {
     loop: true
 })
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbws1lrF333d8SMw993SJSKYggMQiX9Y7NVY3zhW1LEMICTu-FMAk56-33wUK7gVfQTo/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg");
+document.addEventListener("DOMContentLoaded", function () {
+    const textBoxes = document.querySelectorAll('.text-box');
+
+    if (window.innerWidth <= 768) { // Adjust this value based on your requirement
+        textBoxes.forEach(textBox => {
+            textBox.setAttribute('data-aos', 'fade-right');  // Replace 'fade-up' with your desired effect for small devices
+        });
+    }
+});
 
 AOS.init({
     duration: 3000,
@@ -31,6 +41,7 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
 })
+
 
 function openmenu() {
     sidemenu.style.right = "0"

@@ -6,7 +6,7 @@ body {
 
 section {
     min-height: 100vh;
-    /* overflow-y: auto; */
+    overflow-x: hidden;
 }
 
 .container {
@@ -371,7 +371,6 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 600px) {
-
     /* Main */
 
     nav .fa-solid {
@@ -447,6 +446,14 @@ nav .fa-solid {
 
     .timeline::after {
         left: 31px;
+    }
+
+    .experience-head h3 {
+        font-size: 20px;
+    }
+
+    .experience-head h1 {
+        font-size: 50px;
     }
 
     #experience .container {
