@@ -14,6 +14,10 @@ section {
   padding: 10px 10%;
 }
 
+/*-----------------------------------*\
+  HOME
+\*-----------------------------------*/
+
 nav {
   display: flex;
   align-items: center;
@@ -68,7 +72,49 @@ span {
   margin-top: 20px;
 }
 
-/* ------------- About --------------- */
+.scroll-down {
+  height: 80px;
+  width: 50px;
+  border: 4px solid #ff004f;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.scroll-down::before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 1.2em;
+  height: 1em;
+  width: 1em;
+  background-color: #ff004f;
+  border-radius: 50%;
+  animation: move-down-up 2s infinite; 
+}
+
+@keyframes move-down-up {
+  0%, 100% {
+    transform: translateY(0em);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(1.3em);
+    opacity: 1;
+  }
+}
+
+
+/*-----------------------------------*\
+  ABOUT
+\*-----------------------------------*/
+
+
 
 #about {
   color: #ababab;
@@ -156,11 +202,27 @@ span {
 }
 
 .tab-contents ul li span {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 500;
   color: #b54769;
 }
 
-/* ------------- Experience --------------- */
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  top: 50%;
+}
+
+
+
+/*-----------------------------------*\
+  EXPERIENCE
+\*-----------------------------------*/
+
+
 
 #experience {
   color: black;
@@ -217,7 +279,6 @@ span {
 }
 
 .job-title {
-  display: inline-block;
   display: flex;
   justify-content: space-between;
 }
@@ -295,17 +356,19 @@ span {
   left: -15px;
 }
 
-/* My Projects */
+
+
+/*-----------------------------------*\
+  MY PROJECTS
+\*-----------------------------------*/
+
+
 
 #my-projects {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* #my-projects .container {
-    margin-top: 100px;
-} */
 
 .projects {
   display: flex;
@@ -355,9 +418,9 @@ span {
 
 .projects-img {
   padding: 20px;
-  background-size: cover;
+  background-size: contain;
   height: 300px;
-  border-radius: 30px;
+  border-radius: 20px;
   margin-bottom: 20px;
 }
 
@@ -393,7 +456,26 @@ span {
   background-color: #b54769;
 }
 
-/* CONTACTS */
+.project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-footer a {
+  color: #ababab;
+}
+
+.project-card-footer a:hover{
+  transition: 0.5s;
+  color: #b54769;
+}
+
+
+/*-----------------------------------*\
+  CONTACTS
+\*-----------------------------------*/
+
 
 #contacts {
   display: flex;
@@ -422,6 +504,7 @@ span {
 
 .contact-left p {
   margin-top: 30px;
+  color: #fff;
 }
 
 .contact-left p i {
@@ -440,10 +523,16 @@ span {
   margin-right: 15px;
   color: #ababab;
   display: inline-block;
-  transition: transform 0.5s;
+  cursor: default;
 }
 
-.social-icons a :hover {
+.social-icons i, iconify-icon{
+  transition: transform 0.7s;
+}
+
+.social-icons i:hover, .social-icons iconify-icon:hover{
+  cursor: pointer;
+  transition: transform 0.7s;
   color: #ff004f;
   transform: translateY(-5px);
 }
@@ -497,10 +586,33 @@ nav .fa-solid {
   display: block;
 }
 
-@media only screen and (max-width: 600px) {
-  /* Main */
+.contact-link {
+  color: #fff; 
+  text-decoration: none; 
+}
 
-  nav .fa-solid {
+.contact-link:hover {
+  text-decoration: underline; 
+}
+
+.contact-left p {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 10px; 
+}
+
+/*-----------------------------------*\
+  MOBILE SCREEN
+\*-----------------------------------*/
+
+
+
+@media only screen and (max-width: 600px) {
+  /*-----------------------------------*\
+    HOME MOBILE
+  \*-----------------------------------*/
+
+  nav .fa-solid{
     display: block;
     font-size: 25px;
   }
@@ -540,7 +652,17 @@ nav .fa-solid {
     cursor: pointer;
   }
 
-  /* ------------- About --------------- */
+  .scroll-down {
+    left: 43%;
+  }
+
+  /*-----------------------------------*\
+    ABOUT
+  \*-----------------------------------*/
+
+  #about .container {
+    padding-top: 100px;
+  }
 
   .sub-title {
     font-size: 40px;
@@ -564,7 +686,17 @@ nav .fa-solid {
     margin-right: 20px;
   }
 
-  /* Experience */
+  .about-head h1 {
+    font-size: 50px;
+  }
+
+  /*-----------------------------------*\
+    EXPERIENCE
+  \*-----------------------------------*/
+
+  #experience .container {
+    padding-top: 100px;
+  }
 
   .timeline {
     margin: 50px auto;
@@ -596,7 +728,8 @@ nav .fa-solid {
     left: 15px;
   }
 
-  .left-container img, .right-container img {
+  .left-container img,
+  .right-container img {
     left: -2px;
   }
 
@@ -613,7 +746,23 @@ nav .fa-solid {
     flex-basis: 100%;
   }
 
-  /* My Projects */
+  .job-title {
+    flex-direction: column;
+    margin-top: 8px;
+  }
+
+  .job-title .company{
+    margin-bottom: 0px;
+  }
+
+  .job-title .date {
+    margin-bottom: 20px;
+  }
+
+
+  /*-----------------------------------*\
+    MY PROJECTS MOBILE
+  \*-----------------------------------*/
 
   .my-projects-head {
     width: 100%;
@@ -627,7 +776,13 @@ nav .fa-solid {
     width: 100%;
   }
 
-  /* contact */
+  .my-projects-head h1 {
+    font-size: 50px;
+  }
+
+  /*-----------------------------------*\
+    CONTACTS
+  \*-----------------------------------*/
 
   #contacts .container {
     margin-top: 150px;
@@ -635,6 +790,10 @@ nav .fa-solid {
 
   .text-box {
     font-size: 13px;
+  }
+
+  #contacts .sub-title {
+    font-size: 50px;
   }
 
   .text-box small {

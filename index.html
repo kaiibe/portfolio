@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./style/index.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script src="https://kit.fontawesome.com/e398b3cfbd.js" crossorigin="anonymous"></script>
 </head>
 
@@ -28,10 +29,15 @@
           </ul>
           <i class=" fa-solid fa-bars-staggered" onclick="openmenu()"></i>
       </nav>
+
       <div class="nav-text">
         <p>Software Engineer</p>
         <h1>Hi, I'm <span class="auto-type"></span><br />One line of code at a time</h1>
       </div>
+
+      <a href="#about">
+        <div class="scroll-down"></div>
+      </a>
     </div>
   </section>
 
@@ -46,7 +52,6 @@
             <h3>OVERVIEW</h3>
             <h1>About Me</h1>
           </div>
-          <!-- <h1 class="sub-title" data-aos="fade-down" data-aos-duration="500">About Me</h1> -->
           <p data-aos="fade-up" data-aos-duration="700">
             I am a diligent and ambitious student with a deep enthusiasm for creating efficient and reliable software
             solutions that meet the needs of users and businesses. I am currently in my third year of BSc. Software
@@ -58,14 +63,17 @@
           <div class="tab-titles" data-aos="fade-up" data-aos-duration="700">
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
             <p class="tab-links" onclick="opentab('education')">Education</p>
-            <p class="tab-links" onclick="opentab('something')">Something</p>
+            <p class="tab-links" onclick="opentab('languages')">Languages</p>
           </div>
 
           <div id="skills" class="tab-contents active-tab" data-aos="fade-up" data-aos-duration="700">
             <ul>
-              <li><span>Programming Languages</span><br>c++ python asd asd </li>
-              <li><span>Programming Languages</span><br>c++ python asd asd </li>
-              <li><span>Programming Languages</span><br>c++ python asd asd </li>
+              <li><span>Programming Languages</span><br>&bull; C++ &nbsp;&nbsp; &bull; Python &nbsp;&nbsp; &bull;
+                JavaScript </li>
+              <li><span>Frameworks</span><br>&bull; HTML/CSS &nbsp;&nbsp; &bull; React &nbsp;&nbsp; &bull; Tailwind
+                &nbsp;&nbsp; &bull; Flutter</li>
+              <li><span>Cloud and DevOps</span><br>&bull; AWS &nbsp;&nbsp; &bull; Docker &nbsp;&nbsp; &bull; Linux
+                &nbsp;&nbsp; &bull; Git/Github</li>
             </ul>
           </div>
 
@@ -76,11 +84,12 @@
             </ul>
           </div>
 
-          <div id="something" class="tab-contents">
+          <div id="languages" class="tab-contents">
             <ul>
-              <li><span>Programming </span><br>c++ python asd asd </li>
-              <li><span>Programming </span><br>c++ python asd asd </li>
-              <li><span>Programming </span><br>c++ python asd asd </li>
+              <li><span>English </span><br>Full Professional Proficiency</li>
+              <li><span>Russian </span><br>Native or Bilingual Proficiency</li>
+              <li><span>Tajik </span><br>Native or Bilingual Proficiency</li>
+              <li><span>German </span><br>Limited Working Proficiency</li>
             </ul>
           </div>
         </div>
@@ -95,32 +104,33 @@
         <h1>Work Experience</h1>
       </div>
       <div class="timeline" data-aos="fade">
-  
         <div class="experience-card left-container">
-          <img src="./assets/imgs/aai.png" data-aos="fade" data-aos-duration="500">
+          <a href="https://www.linkedin.com/company/automotive-artificial-intelligence-aai-gmbh/mycompany/ target="
+            _blank""><img src="./assets/imgs/aai.png" data-aos="fade" data-aos-duration="500"></a>
           <div class="text-box" data-aos="fade-right">
             <h2>Associate Developer</h2>
             <div class="job-title">
-              <small>AAI GmbH</small><small class="date">May 2023 - Present</small>
+              <small class="company">AAI GmbH</small>
+              <small class="date">May 2023 - Present</small>
             </div>
             <ul>
               <li>
-                  Demonstrated proficiency in co-simulation and model-exchange applications using FMI/FMU.
+                Demonstrated proficiency in co-simulation and model-exchange applications using FMI/FMU.
               </li>
               <li>
-                  Designed and implemented sophisticated algorithms for car
-                  kinematics, exhibiting a strong proficiency in algorithm
-                  development and automotive engineering.
+                Designed and implemented sophisticated algorithms for car
+                kinematics, exhibiting a strong proficiency in algorithm
+                development and automotive engineering.
               </li>
               <li>
-                  Leveraged GeoJSON data and spearheaded its visualization,
-                  showcasing an adept understanding of spatial data formats
-                  and representation.
+                Leveraged GeoJSON data and spearheaded its visualization,
+                showcasing an adept understanding of spatial data formats
+                and representation.
               </li>
               <li>
-                  Utilized Git for version control, demonstrating effective
-                  teamwork and project management skills while maintaining
-                  the codebase of various projects.
+                Utilized Git for version control, demonstrating effective
+                teamwork and project management skills while maintaining
+                the codebase of various projects.
               </li>
             </ul>
             <p>
@@ -138,31 +148,31 @@
         </div>
 
         <div class="experience-card right-container">
-          <img src="./assets/imgs/alif.png" data-aos="fade" data-aos-duration="500">
+          <a href="https://www.linkedin.com/company/alif-capital/" target="_blank"><img src="./assets/imgs/alif.png"
+              data-aos="fade" data-aos-duration="500"></a>
           <div class="text-box" data-aos="fade-left">
             <h2>Intern</h2>
             <div class="job-title">
-              <small>AAI Gmb</small>
+              <small class="company">Alif Bank</small>
               <small class="date">Mar 2023 - April 2023</small>
             </div>
             <ul>
               <li>
-                  Demonstrated proficiency in co-simulation and model-exchange applications using FMI/FMU.
+                Worked seamlessly within a team to conceptualize, design, and implement the Telegram bot project.
               </li>
               <li>
-                  Designed and implemented sophisticated algorithms for car
-                  kinematics, exhibiting a strong proficiency in algorithm
-                  development and automotive engineering.
+                Utilized advanced tools like Python, FastAPI, SQLAlchemy, Aiogram, and Telethon to build a sophisticated
+                and functional solution.
               </li>
               <li>
-                  Leveraged GeoJSON data and spearheaded its visualization,
-                  showcasing an adept understanding of spatial data formats
-                  and representation.
+                Gained hands-on experience in developing frameworks that facilitate complex functionalities and
+                interactions.
               </li>
               <li>
-                  Utilized Git for version control, demonstrating effective
-                  teamwork and project management skills while maintaining
-                  the codebase of various projects.
+                Took ownership of my tasks and delivering results that aligned with project goals.
+              </li>
+              <li>
+                Gained insights into the practical application of technology in a professional environment.
               </li>
             </ul>
             <!-- <p>
@@ -176,13 +186,14 @@
             <span class="right-container-arrow"></span>
           </div>
         </div>
-        
+
         <div class="experience-card left-container">
-          <img src="./assets/imgs/ue2.png" data-aos="fade" data-aos-duration="500">
+          <a href="https://www.linkedin.com/school/university-of-europe-for-applied-sciences/" target="_blank"><img
+              src="./assets/imgs/ue2.png" data-aos="fade" data-aos-duration="500"></a>
           <div class="text-box" data-aos="fade-right">
             <h2>Peer Lead</h2>
             <div class="job-title">
-              <small>University of Europe</small>
+              <small class="company">University of Europe</small>
               <small class="date">Oct 2022 - Feb 2023</small>
             </div>
             <!-- <p>
@@ -195,22 +206,19 @@
             </p> -->
             <ul>
               <li>
-                  Demonstrated proficiency in co-simulation and model-exchange applications using FMI/FMU.
+                Demonstrated strong leadership skills and fostering a sense of community.
               </li>
               <li>
-                  Designed and implemented sophisticated algorithms for car
-                  kinematics, exhibiting a strong proficiency in algorithm
-                  development and automotive engineering.
+                Provided guidance that encompasses academic and personal concerns.
               </li>
               <li>
-                  Leveraged GeoJSON data and spearheaded its visualization,
-                  showcasing an adept understanding of spatial data formats
-                  and representation.
+                Assisted peers with extracurricular involvement and adapting to university life.
               </li>
               <li>
-                  Utilized Git for version control, demonstrating effective
-                  teamwork and project management skills while maintaining
-                  the codebase of various projects.
+                Organized large social events that create a warm and welcoming atmosphere.
+              </li>
+              <li>
+                Offered practical solutions to help fellow students achieve their objectives.
               </li>
             </ul>
             <span class="left-container-arrow"></span>
@@ -240,37 +248,46 @@
       <div class="projects">
         <div class="projects-cards portfolio-project" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
           <div class="projects-img">
-            <a href="https://github.com/kaiibe/portfolio" target="_blank"><img src="./assets/imgs/github.png"
-                alt=""></a>
+            <a href="https://github.com/kaiibe/portfolio" target="_blank"><img src="./assets/imgs/github.png"></a>
           </div>
           <h1>Portfolio.</h1>
           <p>Embrace the elegance of simplicity with our Terminal Portfolio Web Application, a unique fusion of retro
             aesthetics and modern web technologies. This portfolio transports you back to the days of command-line
             interfaces, offering a nostalgic experience combined with the functionalities of today's web.</p>
-          <h5>#HTML #CSS #JS</h5>
+          <div class="project-card-footer">
+            <h5>#HTML #CSS #JS</h5>
+            <a href="https://kaiibe.github.io/portfolio/" target="_blank"><i class="fa-solid fa-share-from-square"></i>
+              open</a>
+          </div>
         </div>
 
         <div class="projects-cards weather-project" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500">
           <div class="projects-img">
-            <a href="https://github.com/kaiibe/weather-web" target="_blank"><img src="./assets/imgs/github.png"
-                alt=""></a>
+            <a href="https://github.com/kaiibe/weather-web" target="_blank"><img src="./assets/imgs/github.png"></a>
           </div>
           <h1>Weather.</h1>
           <p>Embrace the elegance of simplicity with our Terminal Portfolio Web Application, a unique fusion of retro
             aesthetics and modern web technologies. This portfolio transports you back to the days of command-line
             interfaces, offering a nostalgic experience combined with the functionalities of today's web.</p>
-          <h5>#HTML #CSS #JS</h5>
+          <div class="project-card-footer">
+            <h5>#HTML #CSS #JS</h5>
+            <a href="https://github.com/kaiibe/weather-web" target="_blank"><i class="fa-solid fa-share-from-square"></i> open</a>
+          </div>
         </div>
 
         <div class="projects-cards terminal-project" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="500">
           <div class="projects-img">
-            <a href="https://github.com/kaiibe/terminal" target="_blank"><img src="./assets/imgs/github.png" alt=""></a>
+            <a href="https://github.com/kaiibe/terminal" target="_blank"><img src="./assets/imgs/github.png"></a>
           </div>
           <h1>Terminal.</h1>
           <p>Embrace the elegance of simplicity with our Terminal Portfolio Web Application, a unique fusion of retro
             aesthetics and modern web technologies. This portfolio transports you back to the days of command-line
             interfaces, offering a nostalgic experience combined with the functionalities of today's web.</p>
-          <h5>#HTML #CSS #JS</h5>
+          <div class="project-card-footer">
+            <h5>#HTML #CSS #JS</h5>
+            <a href="https://kaiibe.github.io/terminal/" target="_blank"><i class="fa-solid fa-share-from-square"></i>
+              open</a>
+          </div>
         </div>
       </div>
 
@@ -282,13 +299,17 @@
       <div class="row">
         <div class="contact-left" data-aos="flip-left">
           <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fa-solid fa-paper-plane"></i> kaiibe@mail.ru</p>
-          <p><i class="fa-solid fa-square-phone"></i> +992888084004</p>
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:kaiibe@mail.ru"
+              class="contact-link">kaiibe@mail.ru</a></p>
+          <p><i class="fa-solid fa-square-phone"></i> <a href="tel:+4917675087923" class="contact-link">+49 176 75087923</a>
+          </p>
+
           <div class="social-icons">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_kaiibe__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/behzod-khomidov-bk/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/kaiibe/" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+            <a href="https://leetcode.com/kaiibe/" target="_blank"><iconify-icon icon="simple-icons:leetcode"></iconify-icon></a>
+            <a href="https://codeforces.com/profile/Beha_888" target="_blank"><iconify-icon icon="simple-icons:codeforces"></iconify-icon></a>
           </div>
           <a href="./assets/other/CV.pdf" download class="btn">Download CV</a>
         </div>

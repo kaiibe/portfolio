@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         projects.forEach(projects => {
-            projects.setAttribute('data-aos-delay', '500');  
+            projects.setAttribute('data-aos-delay', '0');  
         });
     }
 });
