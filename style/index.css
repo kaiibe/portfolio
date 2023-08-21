@@ -41,7 +41,7 @@ nav ul li a::after {
   content: "";
   width: 0%;
   height: 3px;
-  background: #ff004f;
+  background: #519975;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -59,7 +59,7 @@ nav h1 {
 }
 
 span {
-  color: #d92557;
+  color: #519975;
 }
 
 .nav-text {
@@ -72,10 +72,17 @@ span {
   margin-top: 20px;
 }
 
+.nav-text p {
+  color: #ababab;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 200;
+}
+
 .scroll-down {
   height: 80px;
   width: 50px;
-  border: 4px solid #ff004f;
+  border: 4px solid #519975;
   position: absolute;
   left: 50%;
   bottom: 20px;
@@ -92,7 +99,7 @@ span {
   top: 1.2em;
   height: 1em;
   width: 1em;
-  background-color: #ff004f;
+  background-color: #519975;
   border-radius: 50%;
   animation: move-down-up 2s infinite; 
 }
@@ -174,7 +181,7 @@ span {
   content: "";
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #b89076;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -204,7 +211,7 @@ span {
 .tab-contents ul li span {
   font-size: 18px;
   font-weight: 500;
-  color: #b54769;
+  color: #b89076;
 }
 
 .dot {
@@ -352,7 +359,7 @@ span {
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid #262626;
+  border-right: 16px solid #262626;
   left: -15px;
 }
 
@@ -413,7 +420,7 @@ span {
 
 .projects-cards h5 {
   font-weight: 400;
-  color: #b54769;
+  color: #519975;
 }
 
 .projects-img {
@@ -453,7 +460,7 @@ span {
 
 .projects-img img:hover {
   transform: scale(1.1);
-  background-color: #b54769;
+  background-color: #519975;
 }
 
 .project-card-footer {
@@ -468,7 +475,7 @@ span {
 
 .project-card-footer a:hover{
   transition: 0.5s;
-  color: #b54769;
+  color: #519975;
 }
 
 
@@ -508,7 +515,7 @@ span {
 }
 
 .contact-left p i {
-  color: #ff004f;
+  color: #519975;
   margin-right: 15px;
   font-size: 25px;
 }
@@ -533,19 +540,25 @@ span {
 .social-icons i:hover, .social-icons iconify-icon:hover{
   cursor: pointer;
   transition: transform 0.7s;
-  color: #ff004f;
+  color: #519975;
   transform: translateY(-5px);
 }
 
-.btn {
+.cv-btn {
   display: inline-block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid #ff004f;
+  border: 1px solid #519975;
   padding: 14px 50px;
   border-radius: 6px;
+  color: #519975;
+  transition: 0.5s;
+}
+
+.cv-btn:hover {
+  transition: 0.5s;
   color: #fff;
-  background-color: #ff004f;
+  background-color: #519975;
 }
 
 .contact-right form {
@@ -569,11 +582,20 @@ form textarea {
   border-radius: 6px;
 }
 
-form .btn {
+.form-btn {
+  display: inline-block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #519975;
+  background-color: #519975;
+  color: #fff;
+  border-radius: 6px;
   padding: 14px 60px;
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
+  transition: 0.5s;
+  
 }
 
 nav .fa-solid {
@@ -618,7 +640,7 @@ nav .fa-solid {
   }
 
   nav ul {
-    background: #ff004f;
+    background: #519975;
     position: fixed;
     top: 0;
     right: -200px;
@@ -652,8 +674,14 @@ nav .fa-solid {
     cursor: pointer;
   }
 
+  .nav-text p {
+    font-size: 20px;
+  }
+
   .scroll-down {
-    left: 43%;
+    left: 45%;
+    height: 70px;
+    width: 40px;
   }
 
   /*-----------------------------------*\
@@ -730,7 +758,7 @@ nav .fa-solid {
 
   .left-container img,
   .right-container img {
-    left: -2px;
+    left: -2.5px;
   }
 
 
