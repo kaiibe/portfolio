@@ -2,6 +2,7 @@ body {
   background-color: #131214;
   color: white;
   font-family: "Poppins", sans-serif;
+
 }
 
 section {
@@ -12,11 +13,18 @@ section {
 
 .container {
   padding: 10px 10%;
+
 }
 
 /*-----------------------------------*\
   HOME
 \*-----------------------------------*/
+
+#home {
+  /* background-image: url('../assets/imgs/undraw_version_control_re_mg66.svg'); */
+  background-repeat: no-repeat;
+  background-position: 95% 60%;
+}
 
 nav {
   display: flex;
@@ -101,11 +109,13 @@ span {
   width: 1em;
   background-color: #519975;
   border-radius: 50%;
-  animation: move-down-up 2s infinite; 
+  animation: move-down-up 2s infinite;
 }
 
 @keyframes move-down-up {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0em);
     opacity: 1;
   }
@@ -473,7 +483,7 @@ span {
   color: #ababab;
 }
 
-.project-card-footer a:hover{
+.project-card-footer a:hover {
   transition: 0.5s;
   color: #519975;
 }
@@ -533,11 +543,13 @@ span {
   cursor: default;
 }
 
-.social-icons i, iconify-icon{
+.social-icons i,
+iconify-icon {
   transition: transform 0.7s;
 }
 
-.social-icons i:hover, .social-icons iconify-icon:hover{
+.social-icons i:hover,
+.social-icons iconify-icon:hover {
   cursor: pointer;
   transition: transform 0.7s;
   color: #519975;
@@ -595,7 +607,7 @@ form textarea {
   margin-top: 20px;
   cursor: pointer;
   transition: 0.5s;
-  
+
 }
 
 nav .fa-solid {
@@ -609,18 +621,18 @@ nav .fa-solid {
 }
 
 .contact-link {
-  color: #fff; 
-  text-decoration: none; 
+  color: #fff;
+  text-decoration: none;
 }
 
 .contact-link:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .contact-left p {
   display: flex;
-  align-items: center; 
-  margin-bottom: 10px; 
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 /*-----------------------------------*\
@@ -634,7 +646,7 @@ nav .fa-solid {
     HOME MOBILE
   \*-----------------------------------*/
 
-  nav .fa-solid{
+  nav .fa-solid {
     display: block;
     font-size: 25px;
   }
@@ -682,6 +694,21 @@ nav .fa-solid {
     left: 45%;
     height: 70px;
     width: 40px;
+  }
+
+  .bg-img {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+
+  #home {
+    background-position: 0% 25%;
+    background-size: 350px;
+  }
+
+  .nav-text p {
+    padding-top: 50px;
   }
 
   /*-----------------------------------*\
@@ -779,7 +806,7 @@ nav .fa-solid {
     margin-top: 8px;
   }
 
-  .job-title .company{
+  .job-title .company {
     margin-bottom: 0px;
   }
 
