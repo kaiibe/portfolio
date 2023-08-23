@@ -1,7 +1,7 @@
 # Portfolio Web Application
 
-<p>My personal portfolio web application, created with basic html/css/js</p>
-<p>Here is the <a href="https://kaiibe.github.io/terminal-portfolio/">link to visit website</a></p>
+<p>My personal portfolio web application, created with basic HTML, CSS and JS.</p>
+<p>Here is the <a href="https://kaiibe.github.io/portfolio/">link to visit the website.</a></p>
 
 ## How to Run
 
