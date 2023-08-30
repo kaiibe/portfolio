@@ -15,7 +15,7 @@
 
 2. Open the project and run it on the Live Server!
 
-# Preview
+## Preview
 
 <p align="center">
 <img src="/assets/imgs/portfolio-preview.png"> 
